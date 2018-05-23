@@ -22,7 +22,7 @@ app.use(cors());
 // Database configuration
 mongoose.connect(config.MONGO_URI);
 
-if process.env.NODE_ENV === 'dev' {
+if (process.env.NODE_ENV === 'dev') {
 	mongoose.set('debug', true);
 }
 
